@@ -1,67 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 body {
-    background-color: #efeee7;
+    /*background-color: #efeee7; */
+    background-color: black;
     margin: 0;
     padding: 0;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-size: 18px;
-    line-height: 150%;
-    color: #333;
+    /*color: #333;*/
+    color: #efeee7;
+    background: linear-gradient(#333, black);
 }
 
 header {
-    background-color: #333;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    padding: 20px 35px;
     flex-wrap: wrap;
 }
 
 header h1 {
-    margin: 0;
-    padding: 20px 0px;
+    margin: 0px;
+    padding: 0px;
     color: #eee;
     text-align: center;
-    font-size: 28px;
+    font-size: 30px;
+}
+header nav{
+    margin: 0px;
+    padding: 0px;
 }
 
-nav ul{
+header nav ul{
+    width: 100%;
+    font-size: 25px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px
+    gap: 50px;
+    list-style: none;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 
-nav ul li a{
+header nav ul li{
+    padding: 0px;
+    margin: 0px;
+}
+
+header nav ul li a{
     text-decoration: none;
     color: #eee;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
 }
 
-h2 {
-    font-size: 24px;
-}
-
-a {
-    color: #d21034;
-}
-
-.container {
-    margin: 0px 30px;
-    display: flex;
-    flex-wrap: wrap;
-
-}
 
 .bio {
+    /*background: linear-gradient(#333, black);*/
     width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.info {
-    width: 100%;
+.bio div{
+    padding: 30px 0px 30px 40px;
+    margin: 0px;
+    text-align: center;
+    flex: 1fr;
+    width:50%;
+
 }
 
-section img {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin-right: 20px;
+.bio h2 {
+    font-size: 30px;
+    text-align: start;
+    padding: 60px 0px 0px 6%;
+}
+
+.bio h3 {
+    font-size: 25px;
+    text-align: start;
+    padding: 10px 0px 0px 11%;
+    font-weight: normal;
+}
+
+.bio div img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;;
+}
+.bio p{
+    flex: 1fr;
+    width:50%;
+}
+/*End of hero section */
+
+/* common*/
+.section-content{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.section-title{
+    width: 20%;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: right;
+    border-right: 2px groove white;
+}
+
+.section-body {
+    width:80%;
+    padding-left: 5%;
+    padding-right: 35px;
+}
+
+/*start project Sectiom */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 35px;
+    background-color: aquamarine;
+    
+}
+
+.project-1{
+    grid-row: 1/3 ;
+    grid-column: 1/3 ;
+}
+
+/* start contant section */
+.contact div ul{
+    list-style: none;
+}
+
+.contact div ul li{
+    padding: 5px;
+}
+
+.contact div ul li a{
+    text-decoration: none;
+    color: #eee;
 }
