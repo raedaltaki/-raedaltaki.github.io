@@ -172,8 +172,7 @@ header nav ul li a img{
     align-items: flex-end;
     border: 5px solid rgba(0, 0, 0, 0.5);
     margin: 5px;
-    border-radius: 10px;
-    font-size: 35px;    
+    border-radius: 10px;  
     background-color: #333;
     background-size: cover;
     background-position: initial;
@@ -188,6 +187,7 @@ header nav ul li a img{
  position:relative;
  bottom: 20px;
  padding: 10px;
+ padding-right: 30px;
 }
 
 .project-1{
@@ -234,3 +234,33 @@ header nav ul li a img{
 .contact div ul li{
     padding: 5px;
 }
+
+.contact-info ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* FOOTER STYLES START */
+footer {
+    margin-top: 20px;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 2px groove white;
+  }
+  
+  footer h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    text-align: right;
+  }
+  
+  /* END FOOTER STYLES */
