@@ -227,35 +227,46 @@ header nav ul li a img{
 }
 
 /* start contant section */
+.contact div {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
 .contact div ul{
     list-style: none;
-}
-
-.contact div ul li{
-    padding: 5px;
-}
-
-.contact-info ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 0px 50px
+}
+
+.contact div ul li{
+    padding: 5px;
+    text-align: center;
+}
+
+.contact div ul li img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+
 }
 
 /* FOOTER STYLES START */
 footer {
-    margin-top: 20px;
+    margin-top: 50px;
     padding: 20px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     border-top: 2px groove white;
+    flex: 1;
   }
   
   footer h2 {
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
   }
   
