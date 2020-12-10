@@ -54,7 +54,7 @@ header nav{
     
 }
 
-.top{
+.top-button{
     display: none;
     position: fixed;
     bottom: 50px;
@@ -63,13 +63,13 @@ header nav{
     opacity: 0.3;
 }
 
-.top:hover{
+.top-button:hover{
     opacity: 1;
 }
 
-.top div img{
-    width: 60px;
-    height: 60px;
+.top-button div img{
+    width: 70px;
+    height: 70px;
     border-radius: 15px;
 }
 
@@ -395,8 +395,8 @@ footer {
         justify-content: center;
     }
 
-    .top{
-        display: flex;
+    .top-button{
+        display: block;
     }
 
     .section-content{
