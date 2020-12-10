@@ -406,6 +406,10 @@ footer {
         margin-top: 10px;
     }
 
+    .grid-item::before{
+        content: none;
+    }
+
     .contact-info{
         
         align-items: center;
