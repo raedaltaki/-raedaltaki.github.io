@@ -44,7 +44,7 @@ header h1 {
     padding: 0px;
     color: #eee;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
  
 }
 header nav{
@@ -132,9 +132,9 @@ header nav ul li a img{
 .section-content{
     width: 100%;
     display: flex;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-right: 60px ;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .section-title{
@@ -230,20 +230,29 @@ header nav ul li a img{
 .contact div {
     margin-bottom: 0px;
     padding-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .contact div ul{
     list-style: none;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 0px 50px
+    padding: 0px auto;
+    flex: 1;
 }
 
 .contact div ul li{
     padding: 5px;
     text-align: center;
+    flex: 1;
+}
+
+.contact div ul li a{
+    white-space: nowrap;
 }
 
 .contact div ul li img{
@@ -275,3 +284,170 @@ footer {
   }
   
   /* END FOOTER STYLES */
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 990px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+     header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-title{
+        width: 18%;
+    }
+
+    .section-body{
+        width: 82%;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .bio div{
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .bio div h2{
+        padding-top: 20px;
+    }
+
+    .bio{
+        margin-bottom: 0px;
+    }
+
+    #about-me{
+        margin-top: 10px;
+    }
+
+    .contact-info{
+        
+        align-items: center;
+    }
+    
+    .contact div ul{
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+    }
+
+    .contact div ul li{
+        width: 200px;
+        text-align: center;
+    }
+
+
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    .section-content{
+        margin: 10px auto;
+        padding: 10px auto;
+    }
+
+    .section-title{
+        width: 100%;
+        border: 0px;
+        margin: 10px auto;
+        padding: 10px auto;
+    }
+    .section-title h2{
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        width: 60%;
+        border-bottom: 2px groove white;
+    }
+
+    .section-body{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+    header{
+        padding: 10px;
+        margin-top: 10px;
+    }
+    header h1{
+        font-size: 35px;
+    }
+    header nav ul li {
+        padding: 0px 15px 10px 15px;
+    }
+    .bio{
+        padding: 0 10px;
+    }
+
+    .bio h2, .bio h3{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .bio div img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .grid-container{   
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(10, 1fr);
+    }
+
+    .project-1{
+        grid-row:  1/5;
+        grid-column: 1/3;
+    }
+    
+    .project-2{
+        grid-row: 5/10;
+        grid-column: 1/2;
+    }
+    
+    .project-3{
+        grid-row: 5/8;
+        grid-column: 2/3;
+    }
+
+    .project-4{
+        grid-row: 8/11;
+        grid-column: 2/3;
+    }
+
+    .project-5{
+        grid-row: span 1;
+        grid-column: 1/2;
+    }
+    .project-6{
+        grid-row: 12/13;
+        grid-column: 1/2;
+        visibility: hidden;
+        display: none;
+    }
+
+}
