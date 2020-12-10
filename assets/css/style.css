@@ -25,6 +25,7 @@ header {
     align-items: center;
     padding: 0px 60px;
     flex-wrap: wrap;
+    border-top: 2px groove white;
     border-bottom: 2px groove white;
     border-radius: 10px;
     position: sticky;
@@ -66,7 +67,7 @@ header nav ul{
 }
 
 header nav ul li{
-    padding: 15px 50px;
+    padding: 10px 30px;
     margin: 0px;
     border-right: 1px groove  rgba(255, 255, 255, 0.3) ;
     border-left: 1px groove   rgba(255, 255, 255, 0.3) ;
@@ -84,6 +85,26 @@ header nav ul li a img{
     text-align: center;
     border-radius: 15px;
 }
+
+header nav ul li:hover a img{
+    position:relative;
+    top: -20;
+    left: -20;
+    width:65px;
+    height:65px;
+    z-index:999;
+    padding: 0px;
+}
+
+header nav ul li:hover a p{
+    font-size: 20px;
+}
+
+header nav ul li:hover{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
 
 .bio {
     /*background: linear-gradient(#333, black);*/
@@ -132,14 +153,14 @@ header nav ul li a img{
 .section-content{
     width: 100%;
     display: flex;
-    margin-top: 40px;
+    padding-top: 90px;
     margin-right: 60px ;
     flex-wrap: wrap;
 }
 
 .section-title{
     width: 15%;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
     text-align: right;
@@ -179,15 +200,39 @@ header nav ul li a img{
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    position: relative;
+}
+
+.grid-item::before{
+    content: "";
+    background-color: royalblue;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.grid-item:hover::before{
+    content: none;
+}
+
+.grid-item:hover{
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:120%;
+    height:120%;
+    z-index:999;
 }
 
 .grid-item div{
- background-color: #333 ;
- opacity: 90%;
- position:relative;
- bottom: 20px;
- padding: 10px;
- padding-right: 30px;
+    background-color: #333 ;
+    opacity: 90%;
+    position:relative;
+    bottom: 20px;
+    padding: 10px;
+    padding-right: 30px;
 }
 
 .project-1{
@@ -235,6 +280,9 @@ header nav ul li a img{
     justify-content: space-between;
     align-items: center;
 }
+.contact div h2{
+    width: 100%;
+}
 
 .contact div ul{
     list-style: none;
@@ -259,7 +307,28 @@ header nav ul li a img{
     width: 80px;
     height: 80px;
     border-radius: 10px;
+}
 
+.contact div ul li:hover img{
+    position:relative;
+    top: -20;
+    left: -20;
+    width:90px;
+    height:90px;
+    z-index:999;
+    padding: 0px;
+}
+
+.contact div ul li:hover a p{
+    font-size: 20px;
+}
+
+.contact div ul li a:visited{
+    color: royalblue;
+}
+
+.contact div ul li:hover{
+    padding: 0px;
 }
 
 /* FOOTER STYLES START */
@@ -304,6 +373,9 @@ footer {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
+    }
+    .section-content{
+        padding-top: 40px;
     }
 
     .section-title{
