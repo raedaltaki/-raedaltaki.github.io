@@ -12,12 +12,18 @@ body {
     padding: 0;
     font-family: Georgia, "Times New Roman", Times, serif;
     font-style: oblique;
-    font-size: 18px;
+    font-size: 20px;
     /*color: #333;*/
     color: #efeee7;
     background: linear-gradient(black, #333, black);
 }
 
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+/*header start*/
 header {
     display: flex;
     width: 100%;
@@ -35,11 +41,6 @@ header {
     z-index: 9999;
 }
 
-a{
-    text-decoration: none;
-    color: #eee;
-}
-
 header h1 {
     margin: 0px;
     padding: 0px;
@@ -52,25 +53,6 @@ header nav{
     margin: 0px;
     padding: 0px;
     
-}
-
-.top-button{
-    display: none;
-    position: fixed;
-    bottom: 50px;
-    right: 40px;
-    z-index: 9999;
-    opacity: 0.3;
-}
-
-.top-button:hover{
-    opacity: 1;
-}
-
-.top-button div img{
-    width: 70px;
-    height: 70px;
-    border-radius: 15px;
 }
 
 header nav ul{
@@ -125,9 +107,31 @@ header nav ul li:hover{
     padding-bottom: 0px;
 }
 
+/* End header */
 
+/* start top button*/
+.top-button{
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    z-index: 9999;
+    opacity: 0.3;
+}
+
+.top-button:hover{
+    opacity: 1;
+}
+
+.top-button div img{
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+}
+/* End top button */
+
+/* Start bio section*/
 .bio {
-    /*background: linear-gradient(#333, black);*/
     width: 100%;
     padding: 0px 50px;
     display: flex;
@@ -163,13 +167,14 @@ header nav ul li:hover{
     border: 5px solid rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
+
 .bio p{
     flex: 1fr;
     width:50%;
 }
-/*End of hero section */
+/*End of bio section */
 
-/* common*/
+/* Section common*/
 .section-content{
     width: 100%;
     display: flex;
@@ -192,8 +197,11 @@ header nav ul li:hover{
     padding: 40px 5%;
 }
 
-/*start project Section */
+.section-body p{
+    line-height: 1.7;
+}
 
+/*start project Section */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -283,13 +291,13 @@ header nav ul li:hover{
     grid-row: 6/8;
     grid-column: 3/4;
     background-image: url("../images/demo-image.jpg");
-    /*visibility: hidden;*/
 }
 .project-6{
     grid-row: 7/8;
     grid-column: 3/4;
     visibility: hidden;
 }
+/*End of projects section*/
 
 /* start contant section */
 .contact div {
@@ -350,6 +358,7 @@ header nav ul li:hover{
 .contact div ul li:hover{
     padding: 0px;
 }
+/*End of contacts section*/
 
 /* FOOTER STYLES START */
 footer {
@@ -383,7 +392,6 @@ footer {
     }
 
     header h1 {
-
         margin-top: 20px;
         width: 100%;
         text-align: center;
@@ -413,6 +421,10 @@ footer {
         padding-left: 3%;
     }
 
+    .bio{
+        margin-bottom: 0px;
+    }
+
     .bio div{
         width: 100%;
         padding-left: 10px;
@@ -421,10 +433,6 @@ footer {
 
     .bio div h2{
         padding-top: 20px;
-    }
-
-    .bio{
-        margin-bottom: 0px;
     }
 
     #about-me{
@@ -546,11 +554,11 @@ footer {
         grid-row: span 1;
         grid-column: 1/2;
     }
+
     .project-6{
         grid-row: 12/13;
         grid-column: 1/2;
         visibility: hidden;
         display: none;
     }
-
 }
