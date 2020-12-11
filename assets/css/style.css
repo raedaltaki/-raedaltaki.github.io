@@ -495,6 +495,7 @@ footer {
         width: 100%;
         text-align: center;
     }
+}
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
@@ -503,14 +504,17 @@ footer {
         padding: 10px;
         margin-top: 10px;
     }
+
     header h1{
         margin-top: 10px;
         font-size: 40px;
         line-height: 2;
     }
+
     header nav ul li {
         padding: 0px 15px 10px 15px;
     }
+
     .bio{
         padding: 0 10px;
     }
