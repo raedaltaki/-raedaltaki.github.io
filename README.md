@@ -23,7 +23,9 @@ HTML/CSS
 
 
 ![page Image 1](./assets/images/run-buddy-readme.jpg)
-<br/><br/>
+
+<br/>
+
 ## Horiseon
 HTML/CSS
 
