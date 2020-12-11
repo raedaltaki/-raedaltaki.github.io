@@ -22,7 +22,7 @@ I like to go hiking, working out in the gym and watching movies in my free time.
 HTML/CSS
 
 
-![page Image 1](./assets/images/run-buddy-readme.jpg)
+![page Image 1](./assets/images/run-buddy-readme.JPG)
 
 <br/>
 
@@ -44,6 +44,7 @@ HTML/CSS
 
 # Contact
 
-Email: raed.simon@gmail.com <br/>
+Email: raed.simon@gmail.com
+
 linkedin: raedaltaki
 
