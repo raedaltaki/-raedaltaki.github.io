@@ -22,7 +22,7 @@ I like to go hiking, working out in the gym and watching movies in my free time.
 HTML/CSS
 
 
-![Test Image 1](./assets/images/run-buddy.jpg)
+![Test Image 1](./assets/images/run-buddy-readme.jpg)
 <br/><br/>
 ## Horiseon
 HTML/CSS
