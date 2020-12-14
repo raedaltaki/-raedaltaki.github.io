@@ -90,8 +90,8 @@ header nav ul li a img{
 
 header nav ul li:hover a img{
     position:relative;
-    top: -20;
-    left: -20;
+  /*  top: -20px;
+    left: -20px;*/
     width:65px;
     height:65px;
     z-index:999;
@@ -143,7 +143,7 @@ header nav ul li:hover{
     padding: 30px 0px 10px 40px;
     margin: 0px;
     text-align: center;
-    flex: 1fr;
+    flex: 1;
     width:50%;
 
 }
@@ -169,7 +169,7 @@ header nav ul li:hover{
 }
 
 .bio p{
-    flex: 1fr;
+    flex: 1;
     width:50%;
 }
 /*End of bio section */
@@ -314,7 +314,7 @@ header nav ul li:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px auto;
+    padding: 0px;
     flex: 1;
 }
 
@@ -336,8 +336,8 @@ header nav ul li:hover{
 
 .contact-info ul li:hover img{
     position:relative;
-    top: -20;
-    left: -20;
+  /*  top: -20px;
+    left: -20px; */
     width:90px;
     height:90px;
     z-index:999;
@@ -469,14 +469,14 @@ footer {
 
     .section-content{
         margin: 10px auto;
-        padding: 10px auto;
+    /*    padding: 10px auto;*/
     }
 
     .section-title{
         width: 100%;
         border: 0px;
         margin: 10px auto;
-        padding: 10px auto;
+     /*   padding: 10px auto;*/
     }
     .section-title h2{
         text-align: center;
