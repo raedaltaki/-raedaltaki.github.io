@@ -201,6 +201,28 @@ header nav ul li:hover{
     line-height: 1.7;
 }
 
+button{
+    width:  fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    /* background-color:rgb(75, 72, 72);
+    color: aliceblue; */
+    margin-top: 15px;
+    padding: 15px 40px;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: royalblue;
+    cursor: pointer;
+}
+  
+/* remove border for bottun on click */
+button:focus{
+    outline: none;
+} 
+
+
 /*start project Section */
 .grid-container{
     display: grid;
