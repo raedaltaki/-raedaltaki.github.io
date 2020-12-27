@@ -205,15 +205,17 @@ button{
     width:  fit-content;
     height: fit-content;
     border-radius: 10px;
-    /* background-color:rgb(75, 72, 72);
+    /* background-color:linear-gradient(black, #333, black);
     color: aliceblue; */
     margin-top: 15px;
     padding: 15px 40px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 button:hover{
-    background-color: royalblue;
+    background-color: rgb(110, 110, 110);
+    color: aliceblue;
     cursor: pointer;
 }
   
@@ -546,6 +548,10 @@ footer {
     .bio div img{
         width: 300px;
         height: 300px;
+    }
+
+    button{
+        background-color: #efeee7;
     }
 
     .grid-container{   
