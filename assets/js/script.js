@@ -5,8 +5,6 @@ var intervalStop;
 var downloadResume = function ()
 {
     window.open(".\\assets\\resume\\Resume_Raed Altaki_Web Developer.pdf");
-    // resumeEl.setAttribute("href", "..\\resume\\Resume_Raed Altaki_BELL_Software Developer.pdf");
-    // resumeEl.setAttribute("download", "..\\resume\\Resume_Raed Altaki_BELL_Software Developer.pdf");
 }
 
 var colorChange = function ()
