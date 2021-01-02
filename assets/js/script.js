@@ -36,3 +36,17 @@ intervalStop = setInterval(colorChange,1000);
 resumeFormEl.addEventListener("submit",downloadResume);
 resumeEl.addEventListener("mouseover", buttonMouseOver);
 resumeEl.addEventListener("mouseleave",buttonMouseLeave);
+
+setInterval(function(){$( "#resume" ).effect( "shake", "slow" );},3000);
+$( "#intro-body" ).hide();
+$( "#skills" ).hide();
+$("#about-me").hide();
+$("#projects").hide();
+$("#contact").hide();
+
+$( "#intro-body" ).show( "drop", 2000 );
+setTimeout(function(){ $( "#skills" ).show( "drop", 2000 );},1500);
+setTimeout(function(){ $( "#about-me" ).show( "drop", 2000 );},3000);
+setTimeout(function(){ $( "#projects" ).show( "drop", 2000 );},4500);
+setTimeout(function(){ $( "#contact" ).show( "drop", 2000 );},6000);
+// $(".my-image").show( "fade", 2000 );
