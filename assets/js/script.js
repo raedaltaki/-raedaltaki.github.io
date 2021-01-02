@@ -1,10 +1,13 @@
 var resumeEl = document.getElementById("resume");
+var resumeFormEl = document.getElementById("resume-form");
 var timeoutStop;
 var intervalStop;
 
-var downloadResume = function ()
+var downloadResume = function(event)
 {
-    window.open(".\\assets\\resume\\Resume_Raed Altaki_Web Developer.pdf");
+    event.preventDefault();
+    //resumeEl.setAttribute("download",".\\assets\\resume\\Resume_Raed Altaki_Web Developer.pdf");
+    window.open("./assets/resume/Resume_Raed Altaki_Web Developer.pdf");
 }
 
 var colorChange = function ()
@@ -30,6 +33,6 @@ var buttonMouseLeave = function()
 
 intervalStop = setInterval(colorChange,1000);
 
-resumeEl.addEventListener("click",downloadResume);
+resumeFormEl.addEventListener("submit",downloadResume);
 resumeEl.addEventListener("mouseover", buttonMouseOver);
 resumeEl.addEventListener("mouseleave",buttonMouseLeave);
