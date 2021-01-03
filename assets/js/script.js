@@ -6,9 +6,11 @@ var intervalStop;
 var downloadResume = function(event)
 {
     event.preventDefault();
-    //resumeEl.setAttribute("download",".\\assets\\resume\\Resume_Raed Altaki_Web Developer.pdf");
-    window.open("./assets/resume/Resume_Raed Altaki_Web Developer.pdf");
-}
+//     //resumeEl.setAttribute("download",".\\assets\\resume\\Resume_Raed Altaki_Web Developer.pdf");
+//     //window.open("./assets/resume/Resume_Raed Altaki_Web Developer.pdf");
+    windows.location.href = "./assets/resume/Resume_Raed Altaki_Web Developer.pdf";
+
+ }
 
 var colorChange = function ()
 {
@@ -33,20 +35,20 @@ var buttonMouseLeave = function()
 
 intervalStop = setInterval(colorChange,1000);
 
-resumeFormEl.addEventListener("submit",downloadResume);
+//resumeFormEl.addEventListener("submit",downloadResume);
 resumeEl.addEventListener("mouseover", buttonMouseOver);
 resumeEl.addEventListener("mouseleave",buttonMouseLeave);
 
 setInterval(function(){$( "#resume" ).effect( "shake", "slow" );},3000);
-$( "#intro-body" ).hide();
-$( "#skills" ).hide();
+$("#intro-body").hide();
+$("#skills").hide();
 $("#about-me").hide();
 $("#projects").hide();
 $("#contact").hide();
 
-$( "#intro-body" ).show( "drop", 2000 );
-setTimeout(function(){ $( "#skills" ).show( "drop", 2000 );},1500);
-setTimeout(function(){ $( "#about-me" ).show( "drop", 2000 );},3000);
-setTimeout(function(){ $( "#projects" ).show( "drop", 2000 );},4500);
-setTimeout(function(){ $( "#contact" ).show( "drop", 2000 );},6000);
+$( "#intro-body" ).show( "drop", 1500 );
+setTimeout(function(){ $( "#skills" ).show( "drop", 1500 );},500);
+setTimeout(function(){ $( "#about-me" ).show( "drop", 1500 );},1000);
+setTimeout(function(){ $( "#projects" ).show( "drop", 1500 );},1500);
+setTimeout(function(){ $( "#contact" ).show( "drop", 1500 );},2000);
 // $(".my-image").show( "fade", 2000 );
