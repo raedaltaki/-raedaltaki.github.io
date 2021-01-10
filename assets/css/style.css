@@ -15,7 +15,7 @@ body {
     font-size: 20px;
     /*color: #333;*/
     color: #efeee7;
-    background: linear-gradient(black, #333, black);
+    background: linear-gradient(black , #333 20%, rgb(88, 88, 88) , #333 70%, black 100%);
 }
 
 a{
@@ -29,7 +29,7 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 60px;
+    padding: 10px 0px 0px 40px;
     flex-wrap: wrap;
     border-top: 2px groove white;
     border-bottom: 2px groove white;
@@ -69,7 +69,7 @@ header nav ul{
 }
 
 header nav ul li{
-    padding: 10px 30px;
+    padding: 0px 30px 10px 30px;
     margin: 0px;
     border-right: 1px groove  rgba(255, 255, 255, 0.3) ;
     border-left: 1px groove   rgba(255, 255, 255, 0.3) ;
@@ -105,6 +105,42 @@ header nav ul li:hover a p{
 header nav ul li:hover{
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.weather-container{
+    /* width: 100%; */
+    display: flex;
+    padding: 0 20px 0 0;
+    justify-content: center; /*flex-end;*/
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+    top: -30px;
+}
+
+.weather{
+    display: flex;
+    padding: 0 20px 0 0;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.clock{
+    display: flex;
+    padding: 0 20px 0 0;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#time,
+#location
+{
+    padding: 0 5px;
+}
+
+header div img{
+    width: 40px;
+    height: 40px;
 }
 
 /* End header */
@@ -143,15 +179,25 @@ header nav ul li:hover{
     padding: 30px 0px 10px 40px;
     margin: 0px;
     text-align: center;
-    flex: 1;
-    width:100%;
+    width: 50%
+}
 
+#intro-body
+{
+    width: auto;
+}
+
+#skills
+{
+    width: auto;
+    position: relative;
+    left: 50px;
 }
 
 .bio h2 {
     font-size: 30px;
     text-align: start;
-    padding: 60px 0px 0px 6%;
+    padding: 20px 0px 0px 6%;
 }
 
 .bio div h3 {
@@ -411,24 +457,47 @@ footer {
   
   /* END FOOTER STYLES */
 
+   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1120px) {
+    
+    .bio div{
+        padding: 30px 0px 10px 0px;
+    }
+
+}
+
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1020px) {
     header {
-        padding-bottom: 0;
+        padding: 0px;
         justify-content: center;
         position: relative;
     }
 
     header h1 {
-        margin-top: 20px;
         width: 100%;
         text-align: center;
+        order: 2;
     }
 
-     header nav ul {
-        margin-top: 20px;
+    header nav{
         width: 100%;
         justify-content: center;
+        order: 3;
+    }
+
+    .weather-container{
+        width: 100%;
+        justify-content:center;
+        padding: 0px;
+        order: 1;
+        top: 0px;
+    }
+
+    
+    #skills {
+        position: relative;
+        left: 0px;
     }
 
     .top-button{
@@ -495,11 +564,28 @@ footer {
     }
 }
 
+@media screen and (max-width: 915px) {
+    .bio{
+        padding: 20px;
+    }
+
+    .bio div h3 {
+        padding: 10px 0px 0px 5%
+    }
+
+}
+
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
 
+    #intro-container{
+        position: relative;
+        top: -20px;
+    }
+
     .section-content{
-        margin: 10px auto;
+        margin: 0px auto;
+        padding: 0px;
     /*    padding: 10px auto;*/
     }
 
@@ -526,7 +612,13 @@ footer {
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 681px) {
+    #intro-container{
+        width:100%;
+    }
+    .my-image{
+        width:100%;
+    }
 
     header{
         padding: 10px;

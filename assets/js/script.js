@@ -1,5 +1,9 @@
 var resumeEl = document.getElementById("resume");
 var resumeFormEl = document.getElementById("resume-form");
+var tempretureEl = document.getElementById("temp");
+var weatherIconEl = document.getElementById("icon");
+var locationEl = document.getElementById("location");
+var timeEl = document.getElementById("time");
 var timeoutStop;
 var intervalStop;
 
@@ -32,6 +36,54 @@ var buttonMouseLeave = function()
     intervalStop = setInterval(colorChange,1000);
     timeoutStop = setTimeout("resumeEl.style.background = 'white'; resumeEl.style.color = 'black';",500);
 }
+
+var weather = function(lon,lat)
+{
+    console.log("lon",lon,"lat",lat);
+    var todayWeatherURL = "http://api.openweathermap.org/data/2.5/weather?units=imperial&appid=274cbbc7cb2cf2adbf2edf074233aaec&lat="+lat+"&lon="+lon;
+    fetch(todayWeatherURL)
+        .then(function(response)
+        {
+            if(response.ok)
+            {
+                response.json().then(function(data)
+                {
+                    weatherIconEl.src = "http://openweathermap.org/img/wn/"+data.weather[0].icon+"@2x.png";
+                    tempretureEl.textContent = data.main.temp + "°F";
+                    locationEl.textContent = data.name + ", " + data.sys.country;
+                })
+            }
+            else
+            {
+                alert("Error: Cannot find the coordination for entered city");
+            }
+        })
+        .catch(function(error)
+        {
+            alert("Error: Cannot connect to the server.\n          Please check your Internet connection.");
+        })
+}
+
+function getLocation() 
+{
+  if (navigator.geolocation) 
+  {
+    navigator.geolocation.getCurrentPosition( function(position)
+    {
+        var lat = position.coords.latitude
+        var lon = position.coords.longitude
+        timeEl.textContent = moment(position.timestamp,"x").format("LT");
+        weather(lon,lat);
+    });
+  } 
+  else 
+  { 
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+
+getLocation();
 
 intervalStop = setInterval(colorChange,1000);
 

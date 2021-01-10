@@ -9,10 +9,21 @@
     </head>
 
     <body>
-
         <!--start of header section-->
         <header>
-            <h1><a href="#top">RAED ALTAKI</a></h1> 
+            <h1><a href="#top">RAED ALTAKI</a></h1>
+
+            <div class="weather-container">
+                <div class="weather">
+                    <img id="icon"></img>
+                    <span id="temp"></span>
+                </div>
+                <div class="clock">
+                    <p id="location"></p>
+                    <p id="time"></p>
+                </div>
+            </div>
+
             <nav>
                 <ul>
                     <li>
@@ -26,6 +37,7 @@
                     </li>
                 </ul>
             </nav>
+
         </header>
         <!--End of header section-->
 
@@ -39,14 +51,14 @@
 
         <!--Start of Bio Section-->
         <section class="bio">            
-            <div>
+            <div id="intro-container">
                 <div id="intro-body">
                     <h2>Hey, I'm Raed.</h2>
                     <h3>Web developer from Ontario, Canada. I create custom websites to help business do better online.</h3>
                 </div>
                 <div id="skills">
                     <h2>Technical Skills:</h2>
-                    <h3>HTML &nbsp &nbsp CSS &nbsp &nbsp JavaScript &nbsp &nbsp C# &nbsp &nbsp C++ &nbsp &nbsp JQuery &nbsp &nbsp MomentJs &nbsp &nbsp Bootstrap &nbsp &nbsp SQL</h3>
+                    <h3>HTML &nbsp &nbsp CSS &nbsp &nbsp JavaScript&nbsp &nbsp AJAX &nbsp &nbsp JQuery &nbsp &nbsp MomentJs &nbsp &nbsp Bootstrap &nbsp &nbsp C# &nbsp &nbsp C++ &nbsp &nbsp SQL</h3>
                 </div>
             </div>
             <div class="my-image">
@@ -183,8 +195,10 @@
             </div>
         </footer>
         <!--End of Footer Section-->
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
         <script src="./assets/js/script.js"></script>
 
     </body>
