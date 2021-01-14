@@ -10,8 +10,6 @@ var intervalStop;
 var downloadResume = function(event)
 {
     event.preventDefault();
-//     //resumeEl.setAttribute("download",".\\assets\\resume\\Resume_Raed Altaki_Web Developer.pdf");
-//     //window.open("./assets/resume/Resume_Raed Altaki_Web Developer.pdf");
     windows.location.href = "./assets/resume/Resume_Raed Altaki_Web Developer.pdf";
 
  }
