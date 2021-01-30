@@ -382,9 +382,16 @@ button:focus{
 }
 
 .project-9{
-    grid-row: span 12;
+    grid-row: span 16;
     grid-column: span 9;
     background-image: url("../images/date-concierge.gif");
+    background-position: center;
+}
+
+.project-10{
+    grid-row: span 8;
+    grid-column: span 7;
+    background-image: url("../images/git-it-done.gif");
 }
 
 /*End of projects section*/
