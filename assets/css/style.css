@@ -374,6 +374,19 @@ button:focus{
     grid-column: span 5;
     background-image: url("../images/super-disco.gif");
 }
+
+.project-8{
+    grid-row: span 8;
+    grid-column: span 7;
+    background-image: url("../images/weather-dashboard.gif");
+}
+
+.project-9{
+    grid-row: span 12;
+    grid-column: span 9;
+    background-image: url("../images/date-concierge.gif");
+}
+
 /*End of projects section*/
 
 /* start contant section */
